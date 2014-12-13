@@ -52,6 +52,10 @@ mistake-of-using-zm-fe-x
     js ：模板根目录/page/页面名/页面名.js
     
     css ：模板根目录/page/页面名/页面名.css
+    
+    鼎爷答复：页面级别的静态资源没什么规则，一般会放到static目录下。另外文档上面的错误是历史遗留问题，感谢反馈，修复后会在
+    
+    http://oak.baidu.com 下进行展示。
 
   
   
