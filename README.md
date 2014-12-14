@@ -71,7 +71,12 @@ mistake-of-using-zm-fe-x
      
      */
 ##2014.12.14
-  1.用于测试的数据文件（包括模拟ajax异步请求的处理数据文件）都需要放在模板根目录下得test文件夹
+  1.用于测试的数据文件（包括模拟ajax异步请求的处理数据文件）都需要放在模板根目录下的test文件夹，同时需要在server.conf文件中添加
+  
+  规则。例子：rewrite ^\/api\/validatemobile\?mobile=\d{11,11}$ test/home/api/validatemobile.json
+                                            |                            |     
+                                            |--这是匹配某个请求路径      |--这是该请求的response数据,
+                                            |--的正则表达式              |--注意：该数据的地址应该为release后服务器上对应的地址
   
   
   
