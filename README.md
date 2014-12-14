@@ -77,7 +77,9 @@ mistake-of-using-zm-fe-x
   
   例子：rewrite ^\/api\/validatemobile\?mobile=\d{11,11}$ test/home/api/validatemobile.json
                                             |                            |     
+                                            
                                             |--这是匹配某个请求路径      |--这是该请求的response数据,
+                                            
                                             |--的正则表达式              |--注意：该数据的地址应该为release后服务器上对应的地址
   
   
