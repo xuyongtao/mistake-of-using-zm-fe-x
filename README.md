@@ -80,6 +80,11 @@ mistake-of-using-zm-fe-x
                                             |--这是匹配某个请求路径      |--这是该请求的response数据,注意：该数据的
                                             
                                             |--的正则表达式              |--地址应该为release后服务器上对应的地址
+                                            
+##2014.12.29
+  1.广告图片的名有ad的会被一些拦截广告的浏览器插件所拦截，所以切记以后不要用到
+  
+  2.fis-optimizer-shutup不能完全去掉consol.log，log里面带有其他处理函数不能去掉，详情请看https://github.com/fouber/fis-optimizer-shutup/issues/1
   
   
   
