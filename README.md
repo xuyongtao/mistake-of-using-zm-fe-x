@@ -86,5 +86,6 @@ mistake-of-using-zm-fe-x
   
   2.fis-optimizer-shutup不能完全去掉consol.log，log里面带有其他处理函数不能去掉，详情请看https://github.com/fouber/fis-optimizer-shutup/issues/1
   
+  3.人肉打包不能跨业务模块，需遵循fis打包策略
   
   
