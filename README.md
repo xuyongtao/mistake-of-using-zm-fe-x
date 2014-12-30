@@ -84,7 +84,13 @@ mistake-of-using-zm-fe-x
 ##2014.12.29
   1.广告图片的名有ad的会被一些拦截广告的浏览器插件所拦截，所以切记以后不要用到
   
-  2.fis-optimizer-shutup不能完全去掉consol.log，log里面带有其他处理函数不能去掉，详情请看https://github.com/fouber/fis-optimizer-shutup/issues/1
+  2.fis-optimizer-shutup不能完全去掉consol.log，log里面带有其他处理函数不能去掉，详情请看https://github.com/fouber/fis-optimizer-shutup/issues/1；
+  
+  改用UglifyJS2：https://github.com/mishoo/UglifyJS2#compressor-options
+
+  对应的fis-conf.js配置应该是：
+
+  fis.config.set('settings.optimizer.uglify-js.compress.drop_console', true);
   
   3.人肉打包不能跨业务模块，需遵循fis打包策略
   
